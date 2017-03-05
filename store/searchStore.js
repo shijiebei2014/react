@@ -34,6 +34,7 @@ SearchStore.dispatchToken = busDispatcher.register(function(action) {
 			}).then(function(data) {
 				if (util.isObject(data)) {
 					console.log(data)
+					Action.toggle_back()
 					Action.show_line(action.text, data)
 				} else {
 					console.log('error data:', data)

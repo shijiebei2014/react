@@ -1,7 +1,5 @@
 var React = require('react')
-var ReactDOM = require('react-dom')
 var Ul = require('./view.ul.js')
-var Li = require('./view.li.js')
 
 var Action = require('../../action/action')
 var SearchStore = require('../../store/searchStore')
@@ -19,8 +17,8 @@ var Search = React.createClass({
 		var style = {margin: 0}
 		return	<div className="list-block" style={style}>
 					<Ul>
-						<Li media="" type="text" value={this.state.value} ref="bus_name" placeholder="请输入完整的线路名称，如“933路”、“46路区间" onChange={this.handleChange}/>
-						<Li media="" type="button" ref="search" onClick={this.handleSearch}/>
+						<Ul.Li media="" type="text" value={this.state.value} ref="bus_name" placeholder="请输入完整的线路名称，如“933路”、“46路区间" onChange={this.handleChange}/>
+						<Ul.Li media="" text="查询" type="button" ref="search" onClick={this.handleSearch}/>
 					</Ul>
 				</div>
 	},

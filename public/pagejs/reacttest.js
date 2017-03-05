@@ -33,6 +33,11 @@ module.exports = {
 			type: ActionType.QUERY_STOP,
 			text: key
 		});
+	},
+	toggle_back: function toggle_back() {
+		busDispatcher.dispatch({
+			type: ActionType.TOGGLE_BACK
+		});
 	}
 };
 
@@ -23961,17 +23966,15 @@ var Aplication = React.createClass({
 
 module.exports = Aplication;
 
-},{"./view":200,"react":195,"react-devtools":13,"react-dom":15}],198:[function(require,module,exports){
+},{"./view":202,"react":195,"react-devtools":13,"react-dom":15}],198:[function(require,module,exports){
 'use strict';
 
 //系统内置
 var util = require('util');
 //第三方
 var React = require('react');
-var ReactDOM = require('react-dom');
 //自定义
 var Ul = require('./view.ul.js');
-var Li = require('./view.li.js');
 
 var Action = require('../../action/action');
 var LineStore = require('../../store/lineStore');
@@ -23995,7 +23998,7 @@ var Line = React.createClass({
 			stops = stops.stops;
 			if (stops.length > 1) {
 				var label = stops[0].zdmc + '  --->  ' + stops[stops.length - 1].zdmc;
-				lis.push(React.createElement(Li, { key: '0', type: '', after: '\u8C03\u5934', label: label, afterClick: this.handleDivert }));
+				lis.push(React.createElement(Ul.Li, { key: '0', type: '', after: '\u8C03\u5934', label: label, afterClick: this.handleDivert }));
 				stops.forEach(function (stop) {
 					//var media = <i className="icon icon-f7">{stop.id}.</i>;
 					var media = stop.id + '.';
@@ -24004,7 +24007,7 @@ var Line = React.createClass({
 						{ className: 'item-after' },
 						stop.zdmc
 					);
-					lis.push(React.createElement(Li, { key: stop.id, media: media, type: '', after: after, onClick: this.handleQueryStop.bind(this, stop.id) }));
+					lis.push(React.createElement(Ul.Li, { key: stop.id, media: media, type: '', after: after, onClick: this.handleQueryStop.bind(this, stop.id) }));
 				}, this);
 			}
 		} else {
@@ -24041,13 +24044,11 @@ var Line = React.createClass({
 });
 module.exports = Line;
 
-},{"../../action/action":1,"../../store/lineStore":206,"./view.li.js":201,"./view.ul.js":205,"react":195,"react-dom":15,"util":8}],199:[function(require,module,exports){
+},{"../../action/action":1,"../../store/lineStore":206,"./view.ul.js":205,"react":195,"util":8}],199:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 var Ul = require('./view.ul.js');
-var Li = require('./view.li.js');
 
 var Action = require('../../action/action');
 var SearchStore = require('../../store/searchStore');
@@ -24071,8 +24072,8 @@ var Search = React.createClass({
 			React.createElement(
 				Ul,
 				null,
-				React.createElement(Li, { media: '', type: 'text', value: this.state.value, ref: 'bus_name', placeholder: '\u8BF7\u8F93\u5165\u5B8C\u6574\u7684\u7EBF\u8DEF\u540D\u79F0\uFF0C\u5982\u201C933\u8DEF\u201D\u3001\u201C46\u8DEF\u533A\u95F4', onChange: this.handleChange }),
-				React.createElement(Li, { media: '', type: 'button', ref: 'search', onClick: this.handleSearch })
+				React.createElement(Ul.Li, { media: '', type: 'text', value: this.state.value, ref: 'bus_name', placeholder: '\u8BF7\u8F93\u5165\u5B8C\u6574\u7684\u7EBF\u8DEF\u540D\u79F0\uFF0C\u5982\u201C933\u8DEF\u201D\u3001\u201C46\u8DEF\u533A\u95F4', onChange: this.handleChange }),
+				React.createElement(Ul.Li, { media: '', text: '\u67E5\u8BE2', type: 'button', ref: 'search', onClick: this.handleSearch })
 			)
 		);
 	},
@@ -24103,21 +24104,71 @@ var Search = React.createClass({
 });
 module.exports = Search;
 
-},{"../../action/action":1,"../../store/searchStore":207,"./view.li.js":201,"./view.ul.js":205,"react":195,"react-dom":15}],200:[function(require,module,exports){
+},{"../../action/action":1,"../../store/searchStore":208,"./view.ul.js":205,"react":195}],200:[function(require,module,exports){
+"use strict";
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var React = require('react');
+
+var Button = React.createClass({
+	displayName: "Button",
+
+	render: function render() {
+		var _props = this.props,
+		    text = _props.text,
+		    other = _objectWithoutProperties(_props, ["text"]);
+
+		return React.createElement(
+			"a",
+			_extends({ href: "#", className: "button" }, other),
+			text,
+			">"
+		);
+	}
+});
+
+module.exports = Button;
+
+},{"react":195}],201:[function(require,module,exports){
+"use strict";
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var React = require('react');
+
+var Text = React.createClass({
+  displayName: "Text",
+
+  render: function render() {
+    return React.createElement(
+      "div",
+      { className: "item-input" },
+      React.createElement("input", _extends({ type: "text" }, this.props))
+    );
+  }
+});
+
+module.exports = { Text: Text };
+
+},{"react":195}],202:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 
 var Navbar = require('./view.navbar');
 var Toolbar = require('./view.toolbar');
-var Page = require('./view.page');
+
+var Search = require('./search');
+var Line = require('./line');
+
 var View = React.createClass({
 	displayName: 'View',
 
 	render: function render() {
 		var classNames = this.props.className.split(' ');
-
 		if (classNames.indexOf('view-main') != -1) {
 			return React.createElement(
 				'div',
@@ -24126,8 +24177,8 @@ var View = React.createClass({
 				React.createElement(
 					'div',
 					{ className: 'pages navbar-through toolbar-through' },
-					React.createElement(Page, { page: 'index', is_search: 'true', className: 'page' }),
-					React.createElement(Page, { page: 'line', className: 'page cached' })
+					React.createElement(View.Page, { page: 'index', is_search: 'true', className: 'page' }),
+					React.createElement(View.Page, { page: 'line', className: 'page cached' })
 				)
 			);
 		} else {
@@ -24140,9 +24191,134 @@ var View = React.createClass({
 	}
 });
 
+View.Page = React.createClass({
+	displayName: 'Page',
+
+	render: function render() {
+		return React.createElement(
+			'div',
+			{ 'data-page': this.props.page, className: this.props.className },
+			React.createElement(
+				'div',
+				{ className: 'page-content' },
+				this.props.is_search ? React.createElement(Search, null) : React.createElement(Line, null)
+			)
+		);
+	}
+});
+
 module.exports = View;
 
-},{"./view.navbar":202,"./view.page":203,"./view.toolbar":204,"react":195,"react-dom":15}],201:[function(require,module,exports){
+},{"./line":198,"./search":199,"./view.navbar":203,"./view.toolbar":204,"react":195}],203:[function(require,module,exports){
+'use strict';
+
+//第三方
+var React = require('react');
+//自定义
+var Action = require('../../action/action');
+var NavStore = require('../../store/navStore');
+
+var Navbar = React.createClass({
+	displayName: 'Navbar',
+	getInitialState: function getInitialState() {
+		return {
+			back_is_show: NavStore.value()
+		};
+	},
+
+	componentDidMount: function componentDidMount() {
+		NavStore.addChangeListener(this.handleChange);
+	},
+	render: function render() {
+		var back_is_show = '';
+		if (this.state.back_is_show) {
+			back_is_show = React.createElement(
+				'a',
+				{ href: '#', className: 'link', onClick: this.handleBack },
+				'\u8FD4\u56DE'
+			);
+		}
+		return React.createElement(
+			'div',
+			{ className: 'navbar' },
+			React.createElement(
+				'div',
+				{ className: 'navbar-inner' },
+				React.createElement(
+					'div',
+					{ className: 'left' },
+					back_is_show
+				),
+				React.createElement(
+					'div',
+					{ className: 'center sliding' },
+					'Awesome App'
+				),
+				React.createElement(
+					'div',
+					{ className: 'right' },
+					React.createElement(
+						'a',
+						{ href: '#', className: 'link icon-only open-panel' },
+						React.createElement('i', { className: 'icon icon-bars' })
+					)
+				)
+			)
+		);
+	},
+	componentWillUnmount: function componentWillUnmount() {
+		NavStore.removeChangeListener();
+	},
+	handleBack: function handleBack(e) {
+		NavStore.toggle();
+		this.setState({
+			back_is_show: NavStore.value()
+		});
+		Action.back();
+	},
+	handleChange: function handleChange() {
+		NavStore.toggle();
+		this.setState({
+			back_is_show: NavStore.value()
+		});
+	}
+});
+
+module.exports = Navbar;
+
+},{"../../action/action":1,"../../store/navStore":207,"react":195}],204:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+var Toolbar = React.createClass({
+	displayName: "Toolbar",
+
+	render: function render() {
+		return React.createElement(
+			"div",
+			{ className: "toolbar" },
+			React.createElement(
+				"div",
+				{ className: "toolbar-inner" },
+				React.createElement(
+					"a",
+					{ href: "#", className: "link" },
+					"Link 1"
+				),
+				React.createElement(
+					"a",
+					{ href: "#", className: "link" },
+					"Link 2"
+				)
+			)
+		);
+	}
+});
+
+module.exports = Toolbar;
+
+},{"react":195}],205:[function(require,module,exports){
 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -24150,9 +24326,28 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 
-var Li = React.createClass({
+var Button = require('./view.button.js');
+var Input = require('./view.input.js');
+var Ul = React.createClass({
+	displayName: 'Ul',
+
+	render: function render() {
+		var style = {
+			margin: 0
+		};
+		if (this.props.style) {
+			style = this.props.style;
+		}
+		return React.createElement(
+			'ul',
+			{ style: style },
+			this.props.children
+		);
+	}
+});
+
+Ul.Li = React.createClass({
 	displayName: 'Li',
 
 	render: function render() {
@@ -24160,7 +24355,8 @@ var Li = React.createClass({
 		    media = _props.media,
 		    type = _props.type,
 		    label = _props.label,
-		    other = _objectWithoutProperties(_props, ['media', 'type', 'label']),
+		    text = _props.text,
+		    other = _objectWithoutProperties(_props, ['media', 'type', 'label', 'text']),
 		    input = "",
 		    labelhtml = "";
 
@@ -24173,21 +24369,13 @@ var Li = React.createClass({
 		}
 		switch (type) {
 			case 'text':
-				input = React.createElement(
-					'div',
-					{ className: 'item-input' },
-					React.createElement('input', _extends({ type: 'text' }, other))
-				);
+				input = React.createElement(Input.Text, other);
 				break;
 			case 'button':
 				input = React.createElement(
 					'div',
 					{ className: 'item-input' },
-					React.createElement(
-						'a',
-						_extends({ href: '#', className: 'button' }, other),
-						'\u67E5\u8BE2'
-					)
+					React.createElement(Button, _extends({ text: text }, other))
 				);
 				break;
 			default:
@@ -24208,7 +24396,6 @@ var Li = React.createClass({
 				}
 				break;
 		}
-
 		if (!type && this.props.onClick) {
 			return React.createElement(
 				'li',
@@ -24253,146 +24440,9 @@ var Li = React.createClass({
 	}
 });
 
-module.exports = Li;
-
-},{"react":195,"react-dom":15}],202:[function(require,module,exports){
-'use strict';
-
-//第三方
-var React = require('react');
-var ReactDOM = require('react-dom');
-//自定义
-var Action = require('../../action/action');
-
-var Navbar = React.createClass({
-	displayName: 'Navbar',
-
-	render: function render() {
-		return React.createElement(
-			'div',
-			{ className: 'navbar' },
-			React.createElement(
-				'div',
-				{ className: 'navbar-inner' },
-				React.createElement(
-					'div',
-					{ className: 'left' },
-					React.createElement(
-						'a',
-						{ href: '#', className: 'link', onClick: this.handleBack },
-						'\u8FD4\u56DE'
-					)
-				),
-				React.createElement(
-					'div',
-					{ className: 'center sliding' },
-					'Awesome App'
-				),
-				React.createElement(
-					'div',
-					{ className: 'right' },
-					React.createElement(
-						'a',
-						{ href: '#', className: 'link icon-only open-panel' },
-						React.createElement('i', { className: 'icon icon-bars' })
-					)
-				)
-			)
-		);
-	},
-	handleBack: function handleBack(e) {
-		Action.back();
-	}
-});
-
-module.exports = Navbar;
-
-},{"../../action/action":1,"react":195,"react-dom":15}],203:[function(require,module,exports){
-'use strict';
-
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-var Search = require('./search');
-var Line = require('./line');
-var Page = React.createClass({
-	displayName: 'Page',
-
-	render: function render() {
-		return React.createElement(
-			'div',
-			{ 'data-page': this.props.page, className: this.props.className },
-			React.createElement(
-				'div',
-				{ className: 'page-content' },
-				this.props.is_search ? React.createElement(Search, null) : React.createElement(Line, null)
-			)
-		);
-	}
-});
-
-module.exports = Page;
-
-},{"./line":198,"./search":199,"react":195,"react-dom":15}],204:[function(require,module,exports){
-'use strict';
-
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-var Toolbar = React.createClass({
-	displayName: 'Toolbar',
-
-	render: function render() {
-		return React.createElement(
-			'div',
-			{ className: 'toolbar' },
-			React.createElement(
-				'div',
-				{ className: 'toolbar-inner' },
-				React.createElement(
-					'a',
-					{ href: '#', className: 'link' },
-					'Link 1'
-				),
-				React.createElement(
-					'a',
-					{ href: '#', className: 'link' },
-					'Link 2'
-				)
-			)
-		);
-	}
-});
-
-module.exports = Toolbar;
-
-},{"react":195,"react-dom":15}],205:[function(require,module,exports){
-'use strict';
-
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-var Ul = React.createClass({
-	displayName: 'Ul',
-
-	render: function render() {
-		var style = {
-			margin: 0
-		};
-		if (this.props.style) {
-			style = this.props.style;
-		}
-		return React.createElement(
-			'ul',
-			{ style: style },
-			this.props.children
-		);
-	}
-});
-
 module.exports = Ul;
 
-},{"react":195,"react-dom":15}],206:[function(require,module,exports){
+},{"./view.button.js":200,"./view.input.js":201,"react":195}],206:[function(require,module,exports){
 'use strict';
 
 //系统内置
@@ -24497,6 +24547,47 @@ var busDispatcher = require('../dispatcher/busDispatcher');
 var LineStore = require('../store/lineStore');
 
 var CHANGE_EVENT = 'change',
+    _back_is_show = '';
+var NavStore = assign({}, event.EventEmitter.prototype, {
+	addChangeListener: function addChangeListener(callback) {
+		this.on(CHANGE_EVENT, callback);
+	},
+	removeChangeListener: function removeChangeListener() {
+		this.removeListener(CHANGE_EVENT);
+	},
+	toggle: function toggle(val) {
+		_back_is_show = !_back_is_show;
+	},
+	value: function value() {
+		return _back_is_show;
+	}
+});
+
+NavStore.dispatchToken = busDispatcher.register(function (action) {
+	switch (action.type) {
+		case ActionType.TOGGLE_BACK:
+			NavStore.emit(CHANGE_EVENT);
+			break;
+	}
+});
+
+module.exports = NavStore;
+
+},{"../action/action":1,"../action/actionType":2,"../dispatcher/busDispatcher":3,"../store/lineStore":206,"events":4,"object-assign":12,"util":8}],208:[function(require,module,exports){
+'use strict';
+
+//系统内置
+var util = require('util');
+var event = require('events');
+//第三方
+var assign = require('object-assign');
+//自定义
+var ActionType = require('../action/actionType');
+var Action = require('../action/action');
+var busDispatcher = require('../dispatcher/busDispatcher');
+var LineStore = require('../store/lineStore');
+
+var CHANGE_EVENT = 'change',
     _value = '';
 var SearchStore = assign({}, event.EventEmitter.prototype, {
 	addChangeListener: function addChangeListener(callback) {
@@ -24524,6 +24615,7 @@ SearchStore.dispatchToken = busDispatcher.register(function (action) {
 			}).then(function (data) {
 				if (util.isObject(data)) {
 					console.log(data);
+					Action.toggle_back();
 					Action.show_line(action.text, data);
 				} else {
 					console.log('error data:', data);

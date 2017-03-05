@@ -2,10 +2,8 @@
 var util = require('util')
 //第三方
 var React = require('react')
-var ReactDOM = require('react-dom')
 //自定义
 var Ul = require('./view.ul.js')
-var Li = require('./view.li.js')
 
 var Action = require('../../action/action')
 var LineStore = require('../../store/lineStore')
@@ -25,12 +23,12 @@ var Line = React.createClass({
 			stops = stops.stops
 			if (stops.length > 1) {
 				var label = stops[0].zdmc + '  --->  ' + stops[stops.length - 1].zdmc
-				lis.push(<Li key="0"  type="" after="调头" label={label} afterClick={this.handleDivert}/>)
+				lis.push(<Ul.Li key="0"  type="" after="调头" label={label} afterClick={this.handleDivert}/>)
 				stops.forEach(function(stop) {
 					//var media = <i className="icon icon-f7">{stop.id}.</i>;
 					var media = `${stop.id}.`;
 					var after = <div className="item-after">{stop.zdmc}</div>
-					lis.push(<Li key={stop.id} media={media} type="" after={after} onClick={this.handleQueryStop.bind(this, stop.id)}/>)
+					lis.push(<Ul.Li key={stop.id} media={media} type="" after={after} onClick={this.handleQueryStop.bind(this, stop.id)}/>)
 				}, this)
 			}
 		} else {

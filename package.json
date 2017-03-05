@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "devtools": "react-devtools"
+    "devtools": "react-devtools",
+    "start": "node server"
   },
   "author": "xqq",
   "license": "ISC",

@@ -30,5 +30,10 @@ module.exports = {
 			type: ActionType.QUERY_STOP,
 			text: key,
 		})	
+	},
+	toggle_back: function() {
+	    busDispatcher.dispatch({
+			type: ActionType.TOGGLE_BACK,
+		})		
 	}
 }
