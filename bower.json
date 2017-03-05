@@ -1,0 +1,15 @@
+{
+  "name": "react",
+  "description": "测试react",
+  "main": "index.js",
+  "authors": [
+    "xqq"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "framework7": "^1.5.3",
+    "jquery.cookie": "jquery-cookie#^1.4.1",
+    "jquery-jsonp": "^2.4.0"
+  }
+}

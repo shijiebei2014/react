@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+   	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>reacttest</title>
+
+	<!-- Path to Framework7 iOS CSS theme styles-->
+ 	<link rel="stylesheet" href="<%= path_js_plugins%>/framework7/dist/css/framework7.ios.min.css">
+ 	<!-- Path to Framework7 iOS related color styles -->
+ 	<link rel="stylesheet" href="<%= path_js_plugins%>/framework7/dist/css/framework7.ios.colors.min.css">
+</head>
+<body>
+  	<div class="statusbar-overlay"></div>
+  	<!-- Panels overlay-->
+  	<div class="panel-overlay"></div>
+  	<!-- Left panel with reveal effect-->
+  	<div class="panel panel-left panel-reveal">
+	    <div class="content-block">
+	      	<p>Left panel content goes here</p>
+	    </div>
+	 </div>
+  	<!-- Views -->
+  	<div class="views" id="myApp">
+  	</div>
+	<script type="text/javascript" src="<%= path_js_plugins%>/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="<%= path_js_plugins%>/jquery.cookie/jquery.cookie.js"></script>
+	<script type="text/javascript" src="<%= path_js_plugins%>/jquery-jsonp/src/jquery.jsonp.js"></script>
+	<!-- Path to Framework7 Library JS-->
+	<script type="text/javascript" src="<%= path_js_plugins%>/framework7/dist/js/framework7.min.js"></script>
+	<script src="http://localhost:8097"></script>
+	<script type="text/javascript" src="<%= path_js_page%>/reacttest.js"></script>
+</body>
+</html>
