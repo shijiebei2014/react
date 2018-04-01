@@ -1,0 +1,14 @@
+{
+	"include": [
+		"src/**/*.ts"
+	],
+	"compilerOptions": {
+		//"types": ["node", "es6-promise"],
+		"noImplicitAny": false,
+		"target": "es5",
+		"module": "commonjs",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true
+	}/*,
+	"lib": ["es2015", "es6.Promise"]*/
+}
