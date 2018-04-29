@@ -120,7 +120,7 @@ var search_weather = function (req, res) {
     }).then(function (data) {
         var str = data.data;
         var reg = /var id= "(.*)"/g;
-        var id = reg.exec(str)[1];
+        var id = req.query.id || reg.exec(str)[1];
         console.log('id:', id);
         return urllib.request("http://d1.weather.com.cn/dingzhi/" + id + ".html", {
             type: 'GET',

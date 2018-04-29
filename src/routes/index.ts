@@ -120,8 +120,7 @@ const search_weather = function(req, res) {
 	}).then(function(data) {
 		let str = data.data;
 		let reg = /var id= "(.*)"/g
-        let id = reg.exec(str)[1]
-
+        let id = req.query.id || reg.exec(str)[1]
         console.log('id:', id)
         return urllib.request(`http://d1.weather.com.cn/dingzhi/${id}.html`, {
 			type: 'GET',
