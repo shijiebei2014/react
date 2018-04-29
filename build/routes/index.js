@@ -112,10 +112,36 @@ var search_bus_api = function (req, res) {
         }
     });
 };
+var search_weather = function (req, res) {
+    urllib.request('http://wgeo.weather.com.cn/index.html', {
+        type: 'GET',
+        dataType: 'text',
+        timeout: 60 * 1000,
+    }).then(function (data) {
+        var str = data.data;
+        var reg = /var id= "(.*)"/g;
+        var id = reg.exec(str)[1];
+        console.log('id:', id);
+        return urllib.request("http://d1.weather.com.cn/dingzhi/" + id + ".html", {
+            type: 'GET',
+            dataType: 'text',
+            timeout: 60 * 1000,
+            headers: {
+                'referer': 'http://www.weather.com.cn/'
+            }
+        });
+    }).then(function (data) {
+        res.send(data.data);
+    }).catch(function (err) {
+        res.status(500);
+        res.send(err);
+    });
+};
 function router(app, checkAuth) {
     app.get('/', index);
     app.get('/search', search);
     app.get('/search_stop', search_stop);
     app.get('/search_bus_api', search_bus_api);
+    app.get('/search_weather', search_weather);
 }
 exports.router = router;
