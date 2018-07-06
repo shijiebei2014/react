@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.XXBS_HOST = 'http://xxbs.sh.gov.cn:8080';
 exports.XXBS_PATH = '/weixinpage';
-exports.XXBS_ONE = '/HandlerBus.ashx';
-exports.XXBS_TWO = '/HandlerBus.ashx';
+exports.XXBS_ONE = '/HandlerBus.aspx';
+exports.XXBS_TWO = '/HandlerBus.aspx';
 exports.TYPE_XXBS = 'xxbs';
 exports.BUS_HOST = 'http://web.chelaile.net.cn';
 exports.BUS_APIPATH = '/api/bus';
