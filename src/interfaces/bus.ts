@@ -40,7 +40,7 @@ export class Bus implements Core {
         }
         return ret
       }, ret)
-      if (ret.line_id) {
+      if (ret["line_id"]) {
         return ret
       }
       return null

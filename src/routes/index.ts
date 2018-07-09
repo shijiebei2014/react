@@ -7,7 +7,7 @@ import {Bus_api} from '../interfaces/bus_api';
 import {Bus} from '../interfaces/bus';
 import {write, read, is_json_string} from '../utils/jsonUtil'
 let xxbs = Xxbs.getInstance()
-let bus = Bus.getInstane()
+let bus = Bus.getInstance()
 const index = function(req, res) {
 	console.log('首页')
 	res.render('index')
@@ -57,18 +57,25 @@ const search_stop = function(req, res) {
 			action: "Three"
 		}
 	}).then(function(data) {
+		if (!data.data) {
+			throw new Error('查询失败')
+		}
 		res.json(data.data)
 	}).catch(function(err) {
 		// res.status(500)
 		// res.send(err)
-		return urllib.request('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name + '路') + '&lineid=' + config[name] + '&stopid=' + Number(stopid) + '&dir=' + Number(direction), {
+		console.log('direction:', direction)
+		console.log('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name) + '&lineid=' + config[name] + '&stopid=' + (Number(stopid) + 1) + '&dir=' + (!Number(direction)))
+		return urllib.request('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name) + '&lineid=' + config[name] + '&stopid=' + (Number(stopid) + 1)+ '&dir=' + (!Number(direction)), {
 			type: 'GET',
 			dataType: 'json',
 			timeout: 60 * 1000,
 		})
 	}).then((data)=> {
-		res.json(data.data.data)
+		console.log(data.data.data)
+		res.json({cars: [data.data.data]})
 	}).catch((err)=> {
+		console.log('3:', err)
 		res.status(500)
 		res.send(err)
 	})
