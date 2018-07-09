@@ -4,8 +4,10 @@ import * as _ from 'underscore'
 import urllib = require('urllib')
 import {Xxbs} from '../interfaces/xxbs'
 import {Bus_api} from '../interfaces/bus_api';
+import {Bus} from '../interfaces/bus';
 import {write, read, is_json_string} from '../utils/jsonUtil'
 let xxbs = Xxbs.getInstance()
+let bus = Bus.getInstane()
 const index = function(req, res) {
 	console.log('首页')
 	res.render('index')
@@ -17,46 +19,23 @@ const search = function(req, res) {
 	console.dir(req.query)
 	xxbs.lineDetail({
 		name: name
-	}/*, function(err, data){
-		if (err) {
-			console.log(err)
-			res.status(500)
-			res.json(err) 
-		}
-		if (_.isObject(data.data)) {
-			res.json(data.data)
-			// if (data.data instanceof Buffer) {
-			// 	if (data && data.data) {
-			// 		let string = data.data.toString()
-			// 		//console.log(string)
-			// 		string = string.replace('**YGKJ', '').replace('YGKJ##', '')
-
-			// 		let result = is_json_string(string) && JSON.parse(string)
-			// 		if (result) {
-			// 			//console.dir(result.jsonr.data)
-			// 			return res.json(result.jsonr.data)
-			// 		}
-			// 	}
-			// 	res.status(500).send('请求失败')
-			// } else {
-			// 	console.log(data.data.toString())
-			// 	res.json(data.data)
-			// }
-		} else {
-			//res.send(data.data)
-			res.json(null)
-		}
-	}*/).then(function(data) {
+	}).then(function(data) {
 		if (_.isObject(data.data)) {
 			res.json(data.data)
 		} else {
 			res.json(null)
 		}
 	}).catch(function(err) {
+		return bus.lineDetail({
+			name: name
+		})
+	}).then((data)=> {
+		res.json(data)
+	}).catch((err)=> {
 		if (err) {
 			console.log(err)
 			res.status(500)
-			res.json(err) 
+			res.json(err)
 		}
 	})
 }
@@ -80,6 +59,16 @@ const search_stop = function(req, res) {
 	}).then(function(data) {
 		res.json(data.data)
 	}).catch(function(err) {
+		// res.status(500)
+		// res.send(err)
+		return urllib.request('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name + '路') + '&lineid=' + config[name] + '&stopid=' + Number(stopid) + '&dir=' + Number(direction), {
+			type: 'GET',
+			dataType: 'json',
+			timeout: 60 * 1000,
+		})
+	}).then((data)=> {
+		res.json(data.data.data)
+	}).catch((err)=> {
 		res.status(500)
 		res.send(err)
 	})
