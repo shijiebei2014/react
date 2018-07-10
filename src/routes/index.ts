@@ -17,7 +17,17 @@ const search = function(req, res) {
 	console.log('搜索')
 	var name = req.query.name
 	console.dir(req.query)
-	xxbs.lineDetail({
+
+	bus.lineDetail({
+		name: name
+	}, function(err, result) {
+		if (err) {
+			res.status(500).send(err)
+		} else {
+			res.json(result)
+		}
+	})
+/*	xxbs.lineDetail({
 		name: name
 	}).then(function(data) {
 		if (_.isObject(data.data)) {
@@ -29,9 +39,9 @@ const search = function(req, res) {
 		if (err) {
 			console.log(err)
 			res.status(500)
-			res.json(null)
+			res.json(err)
 		}
-	})
+	})*/
 }
 
 const search_stop = function(req, res) {

@@ -1,8 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//var urllib = require('urllib')
-//var util = require('util')
-var _ = require("underscore");
 var urllib = require("urllib");
 var xxbs_1 = require("../interfaces/xxbs");
 var bus_1 = require("../interfaces/bus");
@@ -17,22 +14,31 @@ var search = function (req, res) {
     console.log('搜索');
     var name = req.query.name;
     console.dir(req.query);
-    xxbs.lineDetail({
+    bus.lineDetail({
         name: name
-    }).then(function (data) {
-        if (_.isObject(data.data)) {
-            res.json(data.data);
+    }, function (err, result) {
+        if (err) {
+            res.status(500).send(err);
         }
         else {
-            res.json(null);
-        }
-    }).catch(function (err) {
-        if (err) {
-            console.log(err);
-            res.status(500);
-            res.json(null);
+            res.json(result);
         }
     });
+    /*	xxbs.lineDetail({
+            name: name
+        }).then(function(data) {
+            if (_.isObject(data.data)) {
+                res.json(data.data)
+            } else {
+                res.json(null)
+            }
+        }).catch((err)=> {
+            if (err) {
+                console.log(err)
+                res.status(500)
+                res.json(err)
+            }
+        })*/
 };
 var search_stop = function (req, res) {
     var name = req.query.name, stopid = req.query.stopid, direction = req.query.direction;
