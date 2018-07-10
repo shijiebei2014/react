@@ -30,7 +30,7 @@ var search = function (req, res) {
         if (err) {
             console.log(err);
             res.status(500);
-            res.json(err);
+            res.json(null);
         }
     });
 };
