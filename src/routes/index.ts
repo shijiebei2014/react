@@ -25,12 +25,6 @@ const search = function(req, res) {
 		} else {
 			res.json(null)
 		}
-	}).catch(function(err) {
-		return bus.lineDetail({
-			name: name
-		})
-	}).then((data)=> {
-		res.json(data)
 	}).catch((err)=> {
 		if (err) {
 			console.log(err)
@@ -48,7 +42,7 @@ const search_stop = function(req, res) {
 	urllib.request('http://xxbs.sh.gov.cn:8080/weixinpage/HandlerBus.ashx', {
 		type: 'GET',
 		dataType: 'json',
-		timeout: 60 * 1000,
+		timeout: 0.1 * 1000,
 		data: {
 			"name": name,
 			"lineid": config[name], //xxbs.mapping[name],
@@ -64,9 +58,8 @@ const search_stop = function(req, res) {
 	}).catch(function(err) {
 		// res.status(500)
 		// res.send(err)
-		console.log('direction:', direction)
-		console.log('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name) + '&lineid=' + config[name] + '&stopid=' + (Number(stopid) + 1) + '&dir=' + (!Number(direction)))
-		return urllib.request('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name) + '&lineid=' + config[name] + '&stopid=' + (Number(stopid) + 1)+ '&dir=' + (!Number(direction)), {
+		console.log('direction:', 'http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name) + '&lineid=' + config[name] + '&stopid=' + Number(stopid)+ '&dir=' + (Number(!Number(direction))))
+		return urllib.request('http://61.129.57.81:8181/interface/getCarmonitor.ashx?name=' + escape(name) + '&lineid=' + config[name] + '&stopid=' + Number(stopid)+ '&dir=' + (Number(!Number(direction))), {
 			type: 'GET',
 			dataType: 'json',
 			timeout: 60 * 1000,
@@ -85,27 +78,37 @@ const search_bus_api = function(req, res) {
 	console.log('搜索2')
 	var name = req.query.name
 	console.dir(req.query);
-	var bus_api = Bus_api.getInstance();
+
+	bus.lineDetail({
+		name: name
+	}, function(err, result) {
+		if (err) {
+			res.status(500).send(err)
+		} else {
+			res.json(result)
+		}
+	})
+	/*var bus_api = Bus_api.getInstance();
 	bus_api.baseSearch({
 		key: name
 	}, function(err, content) {
 		if (err || !_.isObject(content)) {
-		res.status(500).send(err || '不合法的json字符串')
-	} else {
-		console.log(`lineId: ${content.lines[0].lineId}`);
-		bus_api.lineDetail({
-			lineId: content.lines[0].lineId,
-			direction: '0',
-			cityId: '034',
-		}, function(err, result) {
-			if (err) {
-				res.status(500).send(err)
-			} else {
-				res.json(result)
-			}
-		})
-	}
-	})
+			res.status(500).send(err || '不合法的json字符串')
+		} else {
+			console.log(`lineId: ${content.lines[0].lineId}`);
+			bus_api.lineDetail({
+				lineId: content.lines[0].lineId,
+				direction: '0',
+				cityId: '034',
+			}, function(err, result) {
+				if (err) {
+					res.status(500).send(err)
+				} else {
+					res.json(result)
+				}
+			})
+		}
+	})*/
 }
 
 const search_weather = function(req, res) {

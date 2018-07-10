@@ -16,16 +16,11 @@ export class Bus implements Core {
 	}
 	lineDetail(params, cb) { //接口实现
 		let {name} = params
-		return urllib.request(`http://61.129.57.81:8181/interface/getBase.ashx?sign=&name=${escape(name + '路')}`, {
+		let detail = null
+		return urllib.request(`http://61.129.57.81:8181/interface/getBase.ashx?sign=&name=${escape(name)}`, {
 			type: 'GET',
-      // Referer: 'http://61.129.57.81:8181/BusEstimate.aspx',
 			dataType: 'text',
-			timeout: 60 * 1000,
-			// dataAsQueryString: true,
-			// data: {
-			// 	"sign": '',
-			// 	"name": escape(name + '路')
-			// }
+			timeout: 30 * 1000,
 		}).then((data)=>{
 			return data.data
 		}).then(function(data) {
@@ -41,19 +36,47 @@ export class Bus implements Core {
         return ret
       }, ret)
       if (ret["line_id"]) {
+				detail = ret
         return ret
       }
-      return null
+      throw new Error('查询是失败')
 		}).then(function(data) {
-      return urllib.request(`http://61.129.57.81:8181/interface/getStopList.ashx?dir=0&lineid=${data.line_id}&name=${escape(name + '路')}`, {
-  			type: 'GET',
-  			dataType: 'json',
-  			timeout: 60 * 1000,
-  		})
+			const promises = [1, 0].map((dir) => {
+				return urllib.request('http://61.129.57.81:8181/interface/getStopList.ashx?name=' + escape(name) + '&lineid=' + data["line_id"] + '&dir=' + dir, {
+					type: 'GET',
+					dataType: 'json',
+					timeout: 30 * 1000,
+				})
+			})
+			return Promise.all(promises)
     }).then((data)=> {
-      console.log(data.data.data)
+			if (typeof cb === 'function') {
+				cb(null, data.reduce((memo, d, index) => {
+					const stops = d.data.data
+					memo['lineResults' + index] = {
+						direction: !index,
+						line: {
+							desc: '',
+							direction: Number(!index),
+							startSn: detail.start_stop,
+							endSn: detail.end_stop,
+							firstTime: detail.end_earlytime,
+							lastTime: detail.end_latetime,
+							name: detail.line_name,
+							lineId: detail.line_id
+						},
+						stops: stops.map((s) => {
+							return {
+								zdmc: s.name,
+								id: s.id,
+								order: s.id
+							}
+						})
+					}
+					return memo
+				}, {}))
+			}
     }).catch(function(err) {
-      console.log('err:', err)
 			if (typeof cb == 'function') {
 				cb(err, null)
 			} else {

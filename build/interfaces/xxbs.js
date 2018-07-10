@@ -4,7 +4,7 @@ var urllib = require("urllib");
 var _ = require("underscore");
 var constants_1 = require("../utils/constants");
 var jsonUtil_1 = require("../utils/jsonUtil");
-var Xxbs = (function () {
+var Xxbs = /** @class */ (function () {
     function Xxbs() {
         this.mapping = {};
     }
@@ -21,7 +21,7 @@ var Xxbs = (function () {
         return urllib.request("" + constants_1.XXBS_HOST + constants_1.XXBS_PATH + constants_1.XXBS_ONE, {
             type: 'GET',
             //dataType: 'json',
-            timeout: 60 * 1000,
+            timeout: 0.1 * 1000,
             dataAsQueryString: true,
             data: {
                 "action": 'One',
@@ -35,12 +35,12 @@ var Xxbs = (function () {
                     config[name] = _this.mapping[name];
                     jsonUtil_1.write(JSON.stringify(config));
                 }
-                console.log("" + constants_1.XXBS_HOST + constants_1.XXBS_PATH + constants_1.XXBS_TWO);
-                console.log({
-                    "action": 'Two',
-                    "name": name,
-                    "lineid": _this.mapping[name]
-                });
+                // console.log(`${HOST}${PATH}${TWO}`)
+                // console.log({
+                // 		"action": 'Two',
+                // 		"name": name,
+                // 		"lineid": this.mapping[name]
+                // 	})
                 return urllib.request("" + constants_1.XXBS_HOST + constants_1.XXBS_PATH + constants_1.XXBS_TWO, {
                     type: 'GET',
                     dataType: 'json',
@@ -83,7 +83,7 @@ var Xxbs = (function () {
     };
     Xxbs.prototype.baseSearch = function () {
     };
+    Xxbs.instance = null;
     return Xxbs;
 }());
-Xxbs.instance = null;
 exports.Xxbs = Xxbs;

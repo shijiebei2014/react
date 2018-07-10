@@ -22,7 +22,7 @@ export class Xxbs implements Core {
 		return urllib.request(`${HOST}${PATH}${ONE}`, {
 			type: 'GET',
 			//dataType: 'json',
-			timeout: 60 * 1000,
+			timeout: 0.1 * 1000,
 			dataAsQueryString: true,
 			data: {
 				"action": 'One',
@@ -36,12 +36,12 @@ export class Xxbs implements Core {
 					config[name] = this.mapping[name]
 					write(JSON.stringify(config))
 				}
-				console.log(`${HOST}${PATH}${TWO}`)
-				console.log({
-						"action": 'Two',
-						"name": name,
-						"lineid": this.mapping[name]
-					})
+				// console.log(`${HOST}${PATH}${TWO}`)
+				// console.log({
+				// 		"action": 'Two',
+				// 		"name": name,
+				// 		"lineid": this.mapping[name]
+				// 	})
 				return urllib.request(`${HOST}${PATH}${TWO}`, {
 					type: 'GET',
 					dataType: 'json',
