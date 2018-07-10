@@ -55,6 +55,7 @@ export class Bus implements Core {
 					const stops = d.data.data
 					memo['lineResults' + index] = {
 						direction: !index,
+						name: detail.line_name,
 						line: {
 							desc: '',
 							direction: Number(!index),
@@ -65,7 +66,7 @@ export class Bus implements Core {
 							name: detail.line_name,
 							lineId: detail.line_id
 						},
-						stops: stops.map((s) => {
+						lines: stops.map((s) => {
 							return {
 								zdmc: s.name,
 								id: s.id,
