@@ -50,9 +50,12 @@ var Bus = /** @class */ (function () {
             if (typeof cb === 'function') {
                 cb(null, data.reduce(function (memo, d, index) {
                     var stops = d.data.data;
-                    memo['lineResults' + index] = {
+                    if (index === 0) {
+                        memo['name'] = detail.line_name;
+                        memo['direction'] = !index;
+                    }
+                    memo['lines']['lineResults' + index] = {
                         direction: !index,
-                        name: detail.line_name,
                         line: {
                             desc: '',
                             direction: Number(!index),
@@ -63,7 +66,7 @@ var Bus = /** @class */ (function () {
                             name: detail.line_name,
                             lineId: detail.line_id
                         },
-                        lines: stops.map(function (s) {
+                        stops: stops.map(function (s) {
                             return {
                                 zdmc: s.name,
                                 id: s.id,
@@ -72,7 +75,7 @@ var Bus = /** @class */ (function () {
                         })
                     };
                     return memo;
-                }, {}));
+                }, { lines: {}, direction: null, name: null }));
             }
         }).catch(function (err) {
             if (typeof cb == 'function') {
