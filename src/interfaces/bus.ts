@@ -53,12 +53,8 @@ export class Bus implements Core {
 			if (typeof cb === 'function') {
 				cb(null, data.reduce((memo, d, index) => {
 					const stops = d.data.data
-					if (index === 0) {
-						memo['name'] = detail.line_name
-						memo['direction'] = !index
-					}
-					memo['lines']['lineResults' + index] = {
-						direction: !index,
+					memo['lineResults' + index] = {
+						direction: (!index) + '',
 						line: {
 							desc: '',
 							direction: Number(!index),
@@ -78,7 +74,7 @@ export class Bus implements Core {
 						})
 					}
 					return memo
-				}, {lines: {}, direction: null, name: null}))
+				}, {}))
 			}
     }).catch(function(err) {
 			if (typeof cb == 'function') {
