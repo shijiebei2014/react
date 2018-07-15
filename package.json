@@ -4,9 +4,9 @@
   "description": "测试react",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "devtools": "react-devtools",
-    "start": "supervisor -w build/routes server"
+    "start": "supervisor -w build/routes build/server"
   },
   "author": "xqq",
   "license": "ISC",
@@ -42,6 +42,7 @@
     "sequelize": "^3.30.3",
     "serve-favicon": "^2.3.0",
     "socket.io": "^1.3.6",
+    "typescript": "^2.9.2",
     "underscore": "^1.8.3",
     "vinyl-source-stream": "^1.1.0",
     "xml2js": "^0.4.9"
@@ -52,9 +53,16 @@
     "consolidate": "^0.14.5",
     "ejs": "^2.5.5",
     "flux": "^3.1.2",
+    "gulp-babel": "^7.0.1",
+    "gulp-less": "^3.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "node-memwatch": "^1.0.1",
     "object-assign": "^4.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "reflect-metadata": "^0.1.12",
     "underscore": "^1.8.3",
     "urllib": "^2.20.0"
   }
