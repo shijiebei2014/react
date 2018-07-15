@@ -1,0 +1,2321 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cit",
+				"City\talias"
+			],
+			[
+				"JSON",
+				"jsonstring\tparameter"
+			],
+			[
+				"func",
+				"function\tkeyword"
+			],
+			[
+				"pr",
+				"pRate\tlet"
+			],
+			[
+				"pri",
+				"private\tkeyword"
+			],
+			[
+				"get",
+				"getInitialState\t Life Cycle"
+			],
+			[
+				"back",
+				"back_is_show"
+			],
+			[
+				"React",
+				"createClass()\tReact"
+			],
+			[
+				"react",
+				"react-devtools"
+			],
+			[
+				"lini",
+				"lineid"
+			],
+			[
+				"query",
+				"query_stop"
+			],
+			[
+				"after",
+				"afterClick"
+			],
+			[
+				"Change",
+				"CHANGE_EVENT"
+			],
+			[
+				"stat",
+				"statusCode"
+			],
+			[
+				"r",
+				"React"
+			],
+			[
+				"view",
+				"view-main"
+			],
+			[
+				"n",
+				"Navbar"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"gen",
+				"generator"
+			],
+			[
+				"ge",
+				"generator"
+			],
+			[
+				"is",
+				"isChecked"
+			],
+			[
+				"close",
+				"closeModal"
+			],
+			[
+				"btn_",
+				"btn_delete"
+			],
+			[
+				"O",
+				"ObjectId"
+			],
+			[
+				"temp",
+				"templateFunc"
+			],
+			[
+				"wf",
+				"wfCommon"
+			],
+			[
+				"filed",
+				"field_name"
+			],
+			[
+				"set",
+				"setField"
+			],
+			[
+				"cus",
+				"customizeField"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"mutiple",
+				"multiple"
+			],
+			[
+				"start",
+				"start_people"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"desc",
+				"describe"
+			],
+			[
+				"des",
+				"describe"
+			],
+			[
+				"string",
+				"stringify"
+			],
+			[
+				"s",
+				"_sum"
+			],
+			[
+				"测试",
+				"测试用例"
+			],
+			[
+				"star",
+				"start_date"
+			],
+			[
+				"yyy",
+				"YYYY-MM-DD"
+			],
+			[
+				"people",
+				"peopleInfo"
+			],
+			[
+				"ti",
+				"ti_id_or_pi_id"
+			],
+			[
+				"valid",
+				"validate_process"
+			],
+			[
+				"va",
+				"validate_process"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"seelc",
+				"selectEvent"
+			],
+			[
+				"cas",
+				"cascadeModel"
+			],
+			[
+				"Case",
+				"CascadeItem"
+			],
+			[
+				"Cas",
+				"CascadeItem"
+			],
+			[
+				"case",
+				"cascadeView"
+			],
+			[
+				"cascade",
+				"cascadeView"
+			],
+			[
+				"casca",
+				"cascadeView"
+			],
+			[
+				"select",
+				"selectEvent"
+			],
+			[
+				"findby",
+				"findByIdAndUpdate"
+			],
+			[
+				"post",
+				"post_data"
+			],
+			[
+				"trans_",
+				"trans_data"
+			],
+			[
+				"pos",
+				"post_url"
+			],
+			[
+				"post_",
+				"post_data"
+			],
+			[
+				"tran",
+				"trans_data"
+			],
+			[
+				"done",
+				"doneCb"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"po",
+				"position_indirect_superior"
+			],
+			[
+				"posi",
+				"position_direct_superior"
+			],
+			[
+				"dire",
+				"position_direct_superior"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"nex",
+				"next_user"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"export",
+				"exportCol"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/components/application.js",
+			"settings":
+			{
+				"buffer_size": 798,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.ejs",
+			"settings":
+			{
+				"buffer_size": 1609,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/components/view.js",
+			"settings":
+			{
+				"buffer_size": 991,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/components/search.js",
+			"settings":
+			{
+				"buffer_size": 1237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "s"
+			}
+		},
+		{
+			"file": "source/components/view.navbar.js",
+			"settings":
+			{
+				"buffer_size": 1226,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/components/view.toolbar.js",
+			"settings":
+			{
+				"buffer_size": 321,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/components/view.ul.js",
+			"settings":
+			{
+				"buffer_size": 1592,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/components/view.input.js",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "view.input.js"
+			}
+		},
+		{
+			"file": "source/components/view.button.js",
+			"settings":
+			{
+				"buffer_size": 219,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "view.button.js"
+			}
+		},
+		{
+			"file": "source/components/line.js",
+			"settings":
+			{
+				"buffer_size": 1585,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "action/action.js",
+			"settings":
+			{
+				"buffer_size": 731,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/zhq/workspace/node/rabbitmq_server-3.6.6/etc/rabbitmq/rabbitmq.config.example",
+			"settings":
+			{
+				"buffer_size": 21754,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "store/navStore.js",
+			"settings":
+			{
+				"buffer_size": 881,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "navStore.js"
+			}
+		},
+		{
+			"file": "store/searchStore.js",
+			"settings":
+			{
+				"buffer_size": 1173,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "store/lineStore.js",
+			"settings":
+			{
+				"buffer_size": 2056,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "action/actionType.js",
+			"settings":
+			{
+				"buffer_size": 170,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/routes/index.ts",
+			"settings":
+			{
+				"buffer_size": 1386,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/interfaces/bus_api.ts",
+			"settings":
+			{
+				"buffer_size": 8691,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/interfaces/xxbs.ts",
+			"settings":
+			{
+				"buffer_size": 1332,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/line.ts",
+			"settings":
+			{
+				"buffer_size": 241,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "bus.js"
+			}
+		},
+		{
+			"file": "src/test.ts",
+			"settings":
+			{
+				"buffer_size": 1696,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/utils/cheerio.ts",
+			"settings":
+			{
+				"buffer_size": 4860,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "学习.txt",
+			"settings":
+			{
+				"buffer_size": 681,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tsconfig.json",
+			"settings":
+			{
+				"buffer_size": 274,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/utils/upsertCity.ts",
+			"settings":
+			{
+				"buffer_size": 1776,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "upsertCity.ts"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "Package Control: install",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zhq/workspace/react",
+		"/Users/zhq/workspace/react/node_modules"
+	],
+	"file_history":
+	[
+		"/Users/zhq/workspace/react/src/server.ts",
+		"/Users/zhq/workspace/react/tsconfig.json",
+		"/Users/zhq/workspace/react/学习.txt",
+		"/Users/zhq/workspace/react/src/definitions/node.d.ts",
+		"/Users/zhq/workspace/react/src/queues/rabbitmq_upset_line.ts",
+		"/Users/zhq/workspace/react/src/utils/rabbitmq.ts",
+		"/Users/zhq/workspace/react/src/models/city.ts",
+		"/Users/zhq/workspace/react/rabbitmq_config.ts",
+		"/Users/zhq/workspace/zhisiyun/rabbitmq_config.js",
+		"/Users/zhq/workspace/react/src/utils/cheerio.ts",
+		"/Users/zhq/workspace/node/rabbitmq_server-3.6.6/etc/rabbitmq/rabbitmq-env.conf",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/TypeScript/Preferences.sublime-settings",
+		"/Users/zhq/workspace/react/src/db.ts",
+		"/Users/zhq/workspace/react/build/db.js",
+		"/Users/zhq/workspace/react/src/test.ts",
+		"/Users/zhq/workspace/react/build/interfaces/bus_api.js",
+		"/Users/zhq/workspace/react/src/utils/dataadapter.ts",
+		"/Users/zhq/workspace/react/src/utils/constants.ts",
+		"/Users/zhq/workspace/react/src/interfaces/bus_api.ts",
+		"/Users/zhq/workspace/react/src/interfaces/core.ts",
+		"/Users/zhq/workspace/react/build/test.js",
+		"/Users/zhq/workspace/react/gulpfile.js",
+		"/Users/zhq/workspace/react/src/utils/dataadapter.js",
+		"/Users/zhq/workspace/react/build/server.js",
+		"/Users/zhq/workspace/react/package.json",
+		"/Users/zhq/workspace/react/build/src/interfaces/bus_api.js",
+		"/Users/zhq/workspace/react/build/routes/index.js",
+		"/Users/zhq/workspace/react/server.js",
+		"/Users/zhq/workspace/react/src/routes/index.ts",
+		"/Users/zhq/workspace/react/routes/index.js",
+		"/Users/zhq/workspace/react/npm-debug.log",
+		"/Users/zhq/workspace/react/build/interfaces/xxbs.js",
+		"/Users/zhq/workspace/react/src/interfaces/xxbs.ts",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/zhq/workspace/test/tsconfig.json",
+		"/Users/zhq/workspace/test/gulpfile.js",
+		"/Users/zhq/workspace/test/src/main.ts",
+		"/Users/zhq/workspace/test/tsconfig.js",
+		"/Users/zhq/workspace/react/interfaces/bus_api.js",
+		"/Users/zhq/workspace/react/test.ts",
+		"/Users/zhq/workspace/react/test.js",
+		"/Users/zhq/workspace/react/build/interfaces/bus_api.ts",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/TypeScript.sublime-settings",
+		"/Users/zhq/workspace/react/interfaces/bus_api.ts",
+		"/Users/zhq/workspace/react/source/components/view.li.js",
+		"/Users/zhq/workspace/react/source/components/view.page.js",
+		"/Users/zhq/workspace/react/source/components/view.navbar.js",
+		"/Users/zhq/workspace/react/views/index.ejs",
+		"/Users/zhq/workspace/react/public/pagejs/reacttest.js",
+		"/Users/zhq/workspace/react/dispatcher/busDispatcher.js",
+		"/Users/zhq/workspace/react/action/actionType.js",
+		"/Users/zhq/workspace/zhisiyun/app.js",
+		"/Users/zhq/workspace/react/build/index.html",
+		"/Users/zhq/workspace/react/public",
+		"/Users/zhq/workspace/react/source/components/view.js",
+		"/Users/zhq/workspace/react/lib/jquery-jsonp/doc/API.md",
+		"/Users/zhq/workspace/react/source/components/view.ul.js",
+		"/Users/zhq/workspace/react/source/app.js",
+		"/Users/zhq/workspace/react/.babelrc",
+		"/Users/zhq/workspace/react/build/reacttest.js",
+		"/Users/zhq/workspace/react/source/components/view.toolbar.js",
+		"/Users/zhq/workspace/react/lib/framework7/dist/index.html",
+		"/Users/zhq/workspace/react/source/es6.js",
+		"/Users/zhq/workspace/react/source/components/application.js",
+		"/Users/zhq/workspace/react/source/components/navebar.js",
+		"/Users/zhq/workspace/react/bower.json",
+		"/Users/zhq/workspace/react/.bowerrc",
+		"/Users/zhq/workspace/react/build/es6.js",
+		"/Users/zhq/test.htm",
+		"/Users/zhq/workspace/zhisiyun/backup/ei.js",
+		"/Users/zhq/workspace/zhisiyun/cli_config.json",
+		"/Users/zhq/workspace/zhisiyun/server_config.json",
+		"/Users/zhq/workspace/zhisiyun/client/assets/fw7/js/framework7.js",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/wxapp.001_22_reborn.js",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/wxapp.001_12_reborn.js",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/wxapp.001_24_reborn.js",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/wxapp.001_19_new.js",
+		"/Users/zhq/workspace/zhisiyun/queue_worker.js",
+		"/Users/zhq/workspace/zhisiyun/clis/resolve_resume.js",
+		"/Users/zhq/workspace/zhisiyun/queue_config.js",
+		"/Users/zhq/workspace/zhisiyun/routes/admin/recruitment_resume.js",
+		"/Users/zhq/workspace/zhisiyun/views/wxapp/001/001_19_reborn.jade",
+		"/Users/zhq/workspace/zhisiyun/queue/qt_db.js",
+		"/Users/zhq/workspace/zhisiyun/views/wxapp/001/001_12_reborn.jade",
+		"/Users/zhq/workspace/zhisiyun/utils/resume_mail.js",
+		"/Users/zhq/workspace/zhisiyun/node_modules/yapople/lib/yapople.js",
+		"/Users/zhq/workspace/zhisiyun/client/assets/fw7/js/framework7.min.js.map",
+		"/Users/zhq/workspace/zhisiyun/client/assets/fw7/js/framework7.min.js",
+		"/Users/zhq/workspace/zhisiyun/routes/admin/recruitment.js",
+		"/Users/zhq/workspace/zhisiyun/views/wxapp/004/004_13.jade",
+		"/Users/zhq/workspace/zhisiyun/coffee20170108/admin.wf.customize_field.common.pc.coffee",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/admin.wf.customize_field.common.pc.js",
+		"/Users/zhq/workspace/zhisiyun/views/admin/workflow/universal/view_form.jade",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/admin.wf_universal.view_form.js",
+		"/Users/zhq/workspace/zhisiyun/client/assets/plugins/chosen-bootstrap/chosen/chosen.jquery.js",
+		"/Users/zhq/workspace/zhisiyun/views/admin/workflow/process_visual_define/form.jade",
+		"/Users/zhq/workspace/zhisiyun/views/admin/tm/wf_work_of_city/form.jade",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/admin.wf.engine.form.js",
+		"/Users/zhq/workspace/zhisiyun/views/admin/workflow/template/layout_form.jade",
+		"/Users/zhq/workspace/zhisiyun/test/rabbitmq/send.js",
+		"/Users/zhq/workspace/zhisiyun/test/rabbitmq/receiver.js",
+		"/Users/zhq/workspace/zhisiyun/node_modules/amqplib/lib/callback_model.js",
+		"/Users/zhq/workspace/zhisiyun/node_modules/amqplib/test/callback_api.js",
+		"/Users/zhq/workspace/zhisiyun/test/rabbitmq/test.js",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/snippets/function.sublime-snippet",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/Package Control.cache/function.sublime-snippet",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/Users/zhq/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/zhq/workspace/zhisiyun/.gitignore",
+		"/Users/zhq/workspace/zhisiyun/utils/wf_three.js",
+		"/Users/zhq/workspace/zhisiyun/test/db.js",
+		"/Users/zhq/workspace/zhisiyun/schemas/workflow_free.js",
+		"/Users/zhq/workspace/zhisiyun/utils/wf_im.js",
+		"/Users/zhq/workspace/zhisiyun/routes/qywx/utils.js",
+		"/Users/zhq/workspace/zhisiyun/node_modules/wechat-enterprise-api/lib/api_common.js",
+		"/Users/zhq/workspace/zhisiyun/routes/admin/wf_free_approve.js",
+		"/Users/zhq/workspace/zhisiyun/routes/qywx/app_018.js",
+		"/Users/zhq/workspace/zhisiyun/routes/qywx/app_001.js",
+		"/Users/zhq/workspace/zhisiyun/routes/admin/wf_busi.js",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/wxapp.004_31_reborn.js",
+		"/Users/zhq/workspace/zhisiyun/client/assets/new_base/mobiscroll/js/mobiscroll.custom-2.15.0.min.js",
+		"/Users/zhq/workspace/zhisiyun/views/wxapp/004/004_31.jade",
+		"/Users/zhq/workspace/zhisiyun/views/wxapp/001/001_13.jade",
+		"/Users/zhq/workspace/zhisiyun/public/pagejs/admin.wf_universal.handle_form.js",
+		"/Users/zhq/workspace/zhisiyun/views/wxapp/common/wf_layout_form.jade"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/zhq/workspace/react/-node_modules/*,",
+			"/Users/zhq/workspace/react/",
+			"/Users/zhq/workspace/zhisiyun/routes",
+			"/Users/zhq/workspace/zhisiyun/public/pagejs",
+			"/Users/zhq/workspace/zhisiyun/",
+			"/Users/zhq/workspace/zhisiyun/node_modules/amqplib",
+			"/Users/zhq/workspace/zhisiyun/node_modules/amqplib/lib",
+			"/Users/zhq/workspace/zhisiyun/node_modules/wechat-enterprise-api/node_modules",
+			"/Users/zhq/workspace/zhisiyun/routes",
+			"/Users/zhq/workspace/zhisiyun/public/pagejs",
+			"/Users/zhq/workspace/zhisiyun/routes",
+			"/Users/zhq/workspace/zhisiyun/public/pagejs",
+			"/Users/zhq/workspace/zhisiyun/views",
+			"/Users/zhq/workspace/zhisiyun/public/pagejs",
+			"/Users/zhq/workspace/zhisiyun/views",
+			"/Users/zhq/workspace/zhisiyun/public/pagejs",
+			"/Users/zhq/workspace/zhisiyun/routes",
+			"/Users/zhq/workspace/zhisiyun/views",
+			"/Users/zhq/workspace/zhisiyun/routes"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"baseSearch2",
+			"///<",
+			"promise",
+			"get_bus",
+			"rbmq",
+			"querystring",
+			"url",
+			"console.log",
+			"trim",
+			"_",
+			"forEach",
+			"Metadata",
+			"delete",
+			"reflect",
+			"urllib",
+			"SearchStore",
+			"ReactDOM",
+			"Li",
+			"query_bus",
+			"\\/search",
+			"/search",
+			"ashx",
+			"SearchStore.value",
+			"SearchStore",
+			"MainStore",
+			"mainStore",
+			"MainStore",
+			"disp",
+			"flux",
+			"require",
+			"routes",
+			"route",
+			"path_js_plugins",
+			"Destructuring",
+			"className",
+			"class",
+			"发热",
+			";\">",
+			"load_data",
+			"_ccfContentView",
+			"getCondition",
+			"_ccfContentView",
+			"btn_select_full_member_condition",
+			"_ccfContentView",
+			"btn_select_full_member_condition",
+			"getData",
+			"customizeConditionField",
+			"alert",
+			"wf_business",
+			"format_date",
+			"process_instance_id",
+			"task_define_id",
+			"load_view_data",
+			"process_define_id",
+			"route_view",
+			"go_view20",
+			"parttime_positions",
+			"parttime",
+			"trans_confirm_view",
+			"trans_form",
+			"contentCache",
+			"trans_form",
+			"reload",
+			" {",
+			"reload",
+			"_submit",
+			"trans",
+			"trasn",
+			"004_12",
+			"next_tdid",
+			"do_trans",
+			"find_next_next_user",
+			"create_single_chat",
+			"select_when_no_next_user",
+			"create_single_chat",
+			"business_valid_callback",
+			"loading",
+			"body_height",
+			"fullscreen-overlay",
+			"comment_img_preview",
+			"business_save_callback",
+			"save_ct",
+			"comment_img_preview",
+			"do_trans",
+			"trans_confirm",
+			"btn_save",
+			"Template7.templates.",
+			"wfCommon.templateFunc('",
+			"resolve_pagination",
+			"_is_callback_exec",
+			"resolve_pagination",
+			"_is_connection",
+			"resolve_pagination",
+			"template7",
+			"template7.min.js",
+			"template7.min.js\"",
+			"template7",
+			"bk_re",
+			"selectEvent",
+			"get_fieldById",
+			"get_field",
+			"\\?",
+			"cxSelectUtil",
+			"\\?",
+			"?",
+			"cxSelectUtil",
+			"\\.split",
+			"multiple_field",
+			"demoradi",
+			"cascade_field",
+			"default_text",
+			"chosen",
+			".chzn-select",
+			"ffp_v",
+			"FormFieldPropertiseView",
+			">>>",
+			"save_form_data",
+			"alert",
+			"show_notify_msg",
+			"alert",
+			"\\.ou_name",
+			"ou_name",
+			"deleteQueue",
+			"assertQueue",
+			"assertqueue",
+			"assertq",
+			"release360",
+			"rbmq"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"className",
+			"wfCommon.templateFunc('",
+			"Template7.templates."
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/components/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								651,
+								651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/index.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								669,
+								669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/components/view.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/components/search.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								986,
+								997
+							]
+						],
+						"settings":
+						{
+							"auto_name": "s",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/components/view.navbar.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1226,
+								1226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 30.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "source/components/view.toolbar.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "source/components/view.ul.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "source/components/view.input.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"auto_name": "view.input.js",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "source/components/view.button.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"auto_name": "view.button.js",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "source/components/line.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"file": "action/action.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/zhq/workspace/node/rabbitmq_server-3.6.6/etc/rabbitmq/rabbitmq.config.example",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "store/navStore.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								881,
+								881
+							]
+						],
+						"settings":
+						{
+							"auto_name": "navStore.js",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "store/searchStore.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								962,
+								962
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "store/lineStore.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1497,
+								1504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "action/actionType.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								152
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 16,
+					"file": "src/routes/index.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/interfaces/bus_api.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4576,
+								4587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "src/interfaces/xxbs.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "src/models/line.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "bus.js",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/test.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								774,
+								774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "src/utils/cheerio.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "学习.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								611,
+								611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "tsconfig.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "src/utils/upsertCity.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								123
+							]
+						],
+						"settings":
+						{
+							"auto_name": "upsertCity.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.033422459893,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.0510725229826,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 124.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "react.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wxapp.004_common_f7.js",
+				"public/pagejs/wxapp.004_common_f7.js"
+			],
+			[
+				"wxapp.001_22_reborn.js",
+				"public/pagejs/wxapp.001_22_reborn.js"
+			],
+			[
+				"admin.pa.wf.termination_employment_hr.process_form.js",
+				"public/pagejs/admin.pa.wf.termination_employment_hr.process_form.js"
+			],
+			[
+				"admin.wf.customize_field.common.f7.coff",
+				"coffee/admin.wf.customize_field.common.f7.coffee"
+			],
+			[
+				"cli",
+				"cli_config.json"
+			],
+			[
+				"ser",
+				"server_config.json"
+			],
+			[
+				"wf_task",
+				"routes/admin/wf_task_instance.js"
+			],
+			[
+				"people",
+				"schemas/people.js"
+			],
+			[
+				"wf_en",
+				"routes/admin/wf_engine_core.js"
+			],
+			[
+				"ei",
+				"backup/ei.js"
+			],
+			[
+				"framewo",
+				"client/assets/fw7/js/framework7.js"
+			],
+			[
+				"001_22",
+				"views/wxapp/001/001_22_reborn.jade"
+			],
+			[
+				"app_004",
+				"routes/qywx/app_004.js"
+			],
+			[
+				"00_22_re",
+				"public/pagejs/wxapp.001_22_reborn.js"
+			],
+			[
+				"001_12",
+				"public/pagejs/wxapp.001_12_reborn.js"
+			],
+			[
+				"wxapp.001_19_new.js",
+				"public/pagejs/wxapp.001_19_new.js"
+			],
+			[
+				"004_12",
+				"public/pagejs/wxapp.004_12.js"
+			],
+			[
+				"wf_layou",
+				"views/wxapp/common/wf_layout_form_new.jade"
+			],
+			[
+				"wf_la",
+				"public/pagejs/wf_layout_form_new.js"
+			],
+			[
+				"admin/workflow/process_define/condition",
+				"views/admin/workflow/process_define/condition.jade"
+			],
+			[
+				"wf_process_define",
+				"routes/admin/wf_process_define.js"
+			],
+			[
+				"qt_db",
+				"queue/qt_db.js"
+			],
+			[
+				"resolve",
+				"clis/resolve_resume.js"
+			],
+			[
+				"queue_wo",
+				"queue_worker.js"
+			],
+			[
+				"que",
+				"queue_config.js"
+			],
+			[
+				"yapople",
+				"node_modules/yapople/lib/yapople.js"
+			],
+			[
+				"wf_layout_form.js",
+				"public/pagejs/wf_layout_form.js"
+			],
+			[
+				"001_19",
+				"views/wxapp/001/001_19_reborn.jade"
+			],
+			[
+				"framework7.min.js",
+				"client/assets/fw7/js/framework7.min.js.map"
+			],
+			[
+				"framework7.m.js",
+				"client/assets/fw7/js/framework7.min.js"
+			],
+			[
+				"framework7.js",
+				"client/assets/fw7/js/framework7.js"
+			],
+			[
+				"001_12_re",
+				"views/wxapp/001/001_12_reborn.jade"
+			],
+			[
+				"recuri",
+				"routes/admin/recruitment.js"
+			],
+			[
+				"wf_proce",
+				"routes/admin/wf_process_define.js"
+			],
+			[
+				"admin.wf.customize_field.common.pc.c",
+				"coffee/admin.wf.customize_field.common.pc.coffee"
+			],
+			[
+				"admin.wf.engine.form.js",
+				"public/pagejs/admin.wf.engine.form.js"
+			],
+			[
+				"layout_fr",
+				"views/admin/workflow/template/layout_form.jade"
+			],
+			[
+				"admin.workflow.process_define.condition.js",
+				"public/pagejs/admin.workflow.process_define.condition.js"
+			],
+			[
+				"workflow",
+				"schemas/workflow.js"
+			],
+			[
+				"admin.process_visual_define_platform.form_design.js",
+				"public/pagejs/admin.process_visual_define_platform.form_design.js"
+			],
+			[
+				"admin.process_visual_define_platform.form_fields_define.js",
+				"public/pagejs/admin.process_visual_define_platform.form_fields_define.js"
+			],
+			[
+				"admin.process_define_platform.form_design.js",
+				"public/pagejs/admin.process_define_platform.form_design.js"
+			],
+			[
+				"admin.process_define_platform.form_fields_define.js",
+				"public/pagejs/admin.process_define_platform.form_fields_define.js"
+			],
+			[
+				"admin.wf.customize_field.common.coffee",
+				"coffee/admin.wf.customize_field.common.coffee"
+			],
+			[
+				"admin.wf.customize_field.common.pc",
+				"coffee/admin.wf.customize_field.common.pc.coffee"
+			],
+			[
+				"admin.wf.customize_field.common.pc.",
+				"coffee20170108/admin.wf.customize_field.common.pc.coffee"
+			],
+			[
+				"admin.wf.customize_field.common.pc.js",
+				"public/pagejs/admin.wf.customize_field.common.pc.js"
+			],
+			[
+				"layout_form",
+				"views/admin/workflow/template/layout_form.jade"
+			],
+			[
+				"wf_process_visual",
+				"routes/admin/wf_process_visual_define_platform.js"
+			],
+			[
+				"wf_process",
+				"routes/admin/wf_process_define.js"
+			],
+			[
+				"workflo",
+				"schemas/workflow.js"
+			],
+			[
+				"admin.process_define.form_fields_define.js",
+				"public/pagejs/admin.process_define.form_fields_define.js"
+			],
+			[
+				"admin.process_define.form_design.js",
+				"public/pagejs/admin.process_define.form_design.js"
+			],
+			[
+				"wxapp.004_32.js",
+				"public/pagejs/wxapp.004_32.js"
+			],
+			[
+				"004_32",
+				"views/wxapp/004/004_32.jade"
+			],
+			[
+				"base.jade",
+				"views/wxapp/base.jade"
+			],
+			[
+				"wxapp.004_31_reborn.js",
+				"public/pagejs/wxapp.004_31_reborn.js"
+			],
+			[
+				"004_31",
+				"views/wxapp/004/004_31.jade"
+			],
+			[
+				"admin.wf_universal.view_form.js",
+				"public/pagejs/admin.wf_universal.view_form.js"
+			],
+			[
+				"chosen.jquery.js",
+				"client/assets/plugins/chosen-bootstrap/chosen/chosen.jquery.js"
+			],
+			[
+				"admin.process_visual_define.form.js",
+				"public/pagejs/admin.process_visual_define.form.js"
+			],
+			[
+				"admin.wf_universal.handle_form.js",
+				"public/pagejs/admin.wf_universal.handle_form.js"
+			],
+			[
+				"handl",
+				"views/admin/workflow/universal/handle_form.jade"
+			],
+			[
+				"wf_process_vis",
+				"routes/admin/wf_process_visual_define.js"
+			],
+			[
+				"admin.process_visual_define.form_fields_define.js",
+				"public/pagejs/admin.process_visual_define.form_fields_define.js"
+			],
+			[
+				"admin.process_visual_define.form_design.js",
+				"public/pagejs/admin.process_visual_define.form_design.js"
+			],
+			[
+				"views/wxapp/common/wf_layout_form_view.jade",
+				"views/wxapp/common/wf_layout_form_view.jade"
+			],
+			[
+				"public/pagejs/admin.tm.wf.beyond_of_work.new_form.js",
+				"public/pagejs/admin.tm.wf.beyond_of_work.new_form.js"
+			],
+			[
+				"admin.tm.wf.beyond_of_work.new_form.js",
+				"public/pagejs/admin.tm.wf.beyond_of_work.new_form.js"
+			],
+			[
+				"admin.tm.wf.leave.process_form.js",
+				"public/pagejs/admin.tm.wf.leave.process_form.js"
+			],
+			[
+				"admin.tm.wf.work_of_city.new_form.js",
+				"public/pagejs/admin.tm.wf.work_of_city.new_form.js"
+			],
+			[
+				"admin.tm.wf.work_of_travel.new_form.js",
+				"public/pagejs/admin.tm.wf.work_of_travel.new_form.js"
+			],
+			[
+				"layout_",
+				"views/admin/workflow/template/layout_form.jade"
+			],
+			[
+				"server",
+				"server_config.json"
+			],
+			[
+				"wf_layo",
+				"views/wxapp/common/wf_layout_form.jade"
+			],
+			[
+				"wf_layout_form_view.js",
+				"public/pagejs/wf_layout_form_view.js"
+			],
+			[
+				"admin.wf.customize_field.common.f7.coffee",
+				"coffee/admin.wf.customize_field.common.f7.coffee"
+			],
+			[
+				"00119_",
+				"views/wxapp/001/001_19_reborn.jade"
+			],
+			[
+				"position",
+				"schemas/position.js"
+			],
+			[
+				"tm.js",
+				"schemas/tm.js"
+			],
+			[
+				"pa.js",
+				"schemas/pa.js"
+			],
+			[
+				"wf_im",
+				"utils/wf_im.js"
+			],
+			[
+				"workf",
+				"schemas/workflow.js"
+			],
+			[
+				"app_001.js",
+				"routes/qywx/app_001.js"
+			],
+			[
+				"wf_free",
+				"schemas/workflow_free.js"
+			],
+			[
+				"wf_layout_form.j",
+				"public/pagejs/wf_layout_form.js"
+			],
+			[
+				"wf_un",
+				"routes/admin/wf_universal.js"
+			],
+			[
+				"002_07",
+				"public/pagejs/wxapp.002_07_reborn.js"
+			],
+			[
+				"admin.wf.customize_field.common.f7.js",
+				"public/pagejs/admin.wf.customize_field.common.f7.js"
+			],
+			[
+				"views/wxapp/001/001_13.jade",
+				"views/wxapp/001/001_13.jade"
+			],
+			[
+				"public/pagejs/wxapp.004_31_reborn.js",
+				"public/pagejs/wxapp.004_31_reborn.js"
+			],
+			[
+				"public/pagejs/admin.wf_universal.handle_form.js",
+				"public/pagejs/admin.wf_universal.handle_form.js"
+			],
+			[
+				"views/wxapp/common/wf_layout_form.jade",
+				"views/wxapp/common/wf_layout_form.jade"
+			],
+			[
+				"views/wxapp/004/004_31.jade",
+				"views/wxapp/004/004_31.jade"
+			],
+			[
+				"mobiscroll.custom-2.15.0.min.js",
+				"client/assets/new_base/mobiscroll/js/mobiscroll.custom-2.15.0.min.js"
+			],
+			[
+				"wf_lay",
+				"views/wxapp/common/wf_layout_form.jade"
+			],
+			[
+				"004_31_",
+				"public/pagejs/wxapp.004_31_reborn.js"
+			],
+			[
+				"wxapp.004",
+				"public/pagejs/wxapp.004_common.js"
+			],
+			[
+				"004_31_re",
+				"public/pagejs/wxapp.004_31_reborn.js"
+			],
+			[
+				"001_22_reb",
+				"public/pagejs/wxapp.001_22_reborn.js"
+			],
+			[
+				"handle_for",
+				"public/pagejs/admin.wf_universal.handle_form.js"
+			],
+			[
+				"001_24",
+				"public/pagejs/wxapp.001_24_reborn.js"
+			],
+			[
+				"wxapp.005_28.js",
+				"public/pagejs/wxapp.005_28.js"
+			],
+			[
+				"005_28",
+				"views/wxapp/005/005_28.jade"
+			],
+			[
+				"admin.public_activity.bbform_manage.js",
+				"public/pagejs/admin.public_activity.bbform_manage.js"
+			],
+			[
+				"admin/pm/public_activity/bbform_manage",
+				"views/admin/pm/public_activity/bbform_manage.jade"
+			],
+			[
+				"wxapp.005_27.js",
+				"public/pagejs/wxapp.005_27.js"
+			],
+			[
+				"005_27",
+				"views/wxapp/005/005_27.jade"
+			],
+			[
+				"app_005",
+				"routes/qywx/app_005.js"
+			],
+			[
+				"course",
+				"routes/admin/course.js"
+			],
+			[
+				"wxapp.009_17.js",
+				"public/pagejs/wxapp.009_17.js"
+			],
+			[
+				"admin.train_plan.bbform.js",
+				"public/pagejs/admin.train_plan.bbform.js"
+			],
+			[
+				"admin.train_plan.bbform_manage.js",
+				"public/pagejs/admin.train_plan.bbform_manage.js"
+			],
+			[
+				"app_009",
+				"routes/qywx/app_009.js"
+			],
+			[
+				"public/pagejs/wxapp.004_common.js",
+				"public/pagejs/wxapp.004_common.js"
+			],
+			[
+				"public/pagejs/admin.wf.engine.trans_confirm_form.js",
+				"public/pagejs/admin.wf.engine.trans_confirm_form.js"
+			],
+			[
+				"001_12_",
+				"views/wxapp/001/001_12_reborn.jade"
+			],
+			[
+				"001_21",
+				"views/wxapp/001/001_21.jade"
+			],
+			[
+				"wxapp.reborn_001_14.js",
+				"public/pagejs/wxapp.reborn_001_14.js"
+			],
+			[
+				"ei.js",
+				"backup/ei.js"
+			],
+			[
+				"001_24.js",
+				"public/pagejs/wxapp.001_24.js"
+			],
+			[
+				"001_12.js",
+				"public/pagejs/wxapp.001_12.js"
+			],
+			[
+				"wxapp.001_23.js",
+				"public/pagejs/wxapp.001_23.js"
+			],
+			[
+				"001_13",
+				"views/wxapp/001/001_13.jade"
+			],
+			[
+				"001_3.js",
+				"public/pagejs/wxapp.001_13.js"
+			],
+			[
+				"001_23",
+				"views/wxapp/001/001_23.jade"
+			],
+			[
+				"app_001",
+				"routes/qywx/app_001.js"
+			],
+			[
+				"001_12.jade",
+				"views/wxapp/001/001_12.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/workspace/zhisiyun/zhisiyun.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 2,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 344.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

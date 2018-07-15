@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.XXBS_HOST = 'http://xxbs.sh.gov.cn:8080';
+exports.XXBS_PATH = '/weixinpage';
+exports.XXBS_ONE = '/HandlerBus.aspx';
+exports.XXBS_TWO = '/HandlerBus.aspx';
+exports.TYPE_XXBS = 'xxbs';
+exports.BUS_HOST = 'http://web.chelaile.net.cn';
+exports.BUS_APIPATH = '/api/bus';
+exports.BUS_NEARLINES = exports.BUS_APIPATH + "/stop!nearlines.action";
+exports.BUS_LINEDETAIL = exports.BUS_APIPATH + "/line!lineDetail.action";
+exports.BUS_BASESEARCHPATH = '/api/basesearch';
+exports.BUS_BASESEARCH = exports.BUS_BASESEARCHPATH + "/client/clientSearch.action";
+exports.BUS_Q_SID = '1489193697';
+exports.BUS_USERID = 'ou7QDj1DSqpAC6m6XB_RlicBav3c';
+exports.TYPE_BUS = 'bus';

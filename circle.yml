@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t bus_react .
+
+test:
+  override:
+    - docker run docker-node npm test

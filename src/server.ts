@@ -1,11 +1,11 @@
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var bodyParser = require('body-parser');
-var cons = require('consolidate');
-var ejs = require('ejs');
+import express = require('express');
+import * as path from 'path'
+import logger = require('morgan');
+import bodyParser = require('body-parser');
+//import cons = require('consolidate');
+import ejs = require('ejs');
 
-var route = require('./build/routes/').router
+import {router} from './routes/index'
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -32,4 +32,4 @@ process.on('uncaughtException', function(err) {
     console.log('Caught exception: ' + err);
 });
 
-route(app)
+router(app, null)
