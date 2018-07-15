@@ -2,8 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:alpine
+     - image: bus_react
     steps:
-      - run:
-          name: Test
-          command: npm test
+      - checkout
+  test:
+    docker:
+      - image: bus_react
+    steps:
+      - checkout
+      - run: npm test
