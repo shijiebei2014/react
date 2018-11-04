@@ -1,5 +1,6 @@
+/// <reference types="node"/>
 var crypto = require('crypto')
-var Buffer = require('Buffer')
+// var Buffer = require('Buffer')
 
 function WXBizDataCrypt(appId, sessionKey) {
   this.appId = appId

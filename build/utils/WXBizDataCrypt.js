@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+/// <reference types="node"/>
 var crypto = require('crypto');
-var Buffer = require('Buffer');
+// var Buffer = require('Buffer')
 function WXBizDataCrypt(appId, sessionKey) {
     this.appId = appId;
     this.sessionKey = sessionKey;
