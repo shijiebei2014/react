@@ -4,6 +4,7 @@ var urllib = require("urllib");
 var xxbs_1 = require("../interfaces/xxbs");
 var bus_1 = require("../interfaces/bus");
 var jsonUtil_1 = require("../utils/jsonUtil");
+var WXBizDataCrypt_1 = require("../utils/WXBizDataCrypt");
 var xxbs = xxbs_1.Xxbs.getInstance();
 var bus = bus_1.Bus.getInstance();
 var index = function (req, res) {
@@ -139,11 +140,18 @@ var search_weather = function (req, res) {
         res.send(err);
     });
 };
+var decrypt = function (req, res) {
+    var _a = req.body, iv = _a.iv, appId = _a.appId, session_key = _a.session_key, data = _a.data;
+    var ret = new WXBizDataCrypt_1.default(appId, session_key).decryptData(data, iv);
+    console.log(ret);
+    res.json(ret);
+};
 function router(app, checkAuth) {
     app.get('/', index);
     app.get('/search', search);
     app.get('/search_stop', search_stop);
     app.get('/search_bus_api', search_bus_api);
     app.get('/search_weather', search_weather);
+    app.post('/decrypt', decrypt);
 }
 exports.router = router;

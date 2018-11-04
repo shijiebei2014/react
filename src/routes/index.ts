@@ -6,6 +6,7 @@ import {Xxbs} from '../interfaces/xxbs'
 import {Bus_api} from '../interfaces/bus_api';
 import {Bus} from '../interfaces/bus';
 import {write, read, is_json_string} from '../utils/jsonUtil'
+import WXBizDataCrypt from '../utils/WXBizDataCrypt'
 let xxbs = Xxbs.getInstance()
 let bus = Bus.getInstance()
 const index = function(req, res) {
@@ -147,10 +148,18 @@ const search_weather = function(req, res) {
 	})
 }
 
+const decrypt = function(req, res) {
+	const { iv, appId, session_key, data } = req.body
+	const ret = new WXBizDataCrypt(appId, session_key).decryptData(data, iv)
+	console.log(ret)
+	res.json(ret)
+}
+
 export function router(app, checkAuth) {
 	app.get('/', index);
 	app.get('/search', search);
 	app.get('/search_stop', search_stop);
 	app.get('/search_bus_api', search_bus_api)
 	app.get('/search_weather', search_weather)
+	app.post('/decrypt', decrypt)
 }
